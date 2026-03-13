@@ -22,6 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit from clover device
 $(call inherit-product, device/xiaomi/clover/device.mk)
 
+WITH_ADB_INSECURE := true
+
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 $(call inherit-product, vendor/lineage/config/telephony.mk)
